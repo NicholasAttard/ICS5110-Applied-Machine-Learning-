@@ -1,53 +1,34 @@
 {
     "metric_results": {
         "0": {
-            "precision": 0.8837209302325582,
-            "recall": 0.95,
-            "f1-score": 0.9156626506024096,
-            "support": 40.0
+            "precision": 0.9245283018867925,
+            "recall": 0.9607843137254902,
+            "f1-score": 0.9423076923076923,
+            "support": 51.0
         },
         "1": {
-            "precision": 0.8461538461538461,
-            "recall": 0.6875,
-            "f1-score": 0.7586206896551724,
-            "support": 16.0
+            "precision": 0.3333333333333333,
+            "recall": 0.2,
+            "f1-score": 0.25,
+            "support": 5.0
         },
-        "accuracy": 0.875,
+        "accuracy": 0.8928571428571429,
         "macro avg": {
-            "precision": 0.8649373881932021,
-            "recall": 0.81875,
-            "f1-score": 0.837141670128791,
+            "precision": 0.6289308176100629,
+            "recall": 0.5803921568627451,
+            "f1-score": 0.5961538461538461,
             "support": 56.0
         },
         "weighted avg": {
-            "precision": 0.8729874776386405,
-            "recall": 0.875,
-            "f1-score": 0.8707935189031991,
+            "precision": 0.8717430368373764,
+            "recall": 0.8928571428571429,
+            "f1-score": 0.8804945054945055,
             "support": 56.0
         }
     },
     "actual": [
         0,
-        1,
-        1,
-        1,
         0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
         0,
         0,
         0,
@@ -64,12 +45,8 @@
         0,
         0,
         0,
-        1,
-        1,
-        1,
         0,
-        0,
-        0,
+        1,
         0,
         0,
         0,
@@ -78,17 +55,37 @@
         0,
         0,
         0,
+        0,
+        0,
+        0,
+        0,
+        0,
         1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0
     ],
     "predictions": [
         0,
-        1,
-        1,
-        1,
         0,
         0,
         0,
@@ -96,12 +93,12 @@
         0,
         0,
         0,
-        1,
-        1,
+        0,
+        0,
+        0,
         0,
         1,
-        1,
-        1,
+        0,
         0,
         0,
         0,
@@ -122,22 +119,25 @@
         0,
         0,
         0,
-        1,
-        0,
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0,
         0,
         0,
         1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0
@@ -149,76 +149,106 @@
         ],
         "matrix": [
             [
-                38,
+                49,
                 2
             ],
             [
-                5,
-                11
+                4,
+                1
             ]
         ]
     },
     "roc_curve_ovrll": {
         "fpr": [
             0.0,
-            0.0,
-            0.0,
-            0.025,
-            0.025,
-            0.05,
-            0.05,
-            0.125,
-            0.125,
-            0.2,
-            0.2,
+            0.0196078431372549,
+            0.0196078431372549,
+            0.09803921568627451,
+            0.09803921568627451,
+            0.13725490196078433,
+            0.13725490196078433,
+            0.17647058823529413,
+            0.17647058823529413,
             1.0
         ],
         "tpr": [
             0.0,
-            0.0625,
-            0.625,
-            0.625,
-            0.6875,
-            0.6875,
-            0.875,
-            0.875,
-            0.9375,
-            0.9375,
+            0.0,
+            0.2,
+            0.2,
+            0.4,
+            0.4,
+            0.6,
+            0.6,
             1.0,
             1.0
         ],
         "thresholds": [
             Infinity,
-            0.9221707488330605,
-            0.608362714755892,
-            0.5543044291567016,
-            0.5498780624569846,
-            0.4883935243602611,
-            0.38027680262833546,
-            0.2697865546406518,
-            0.26278337383169525,
-            0.2252244706322744,
-            0.2168884877266278,
-            0.016128017617165345
+            0.844088720154242,
+            0.623102723382441,
+            0.3687516189330178,
+            0.3165203353650618,
+            0.19970458841032418,
+            0.13812832752717577,
+            0.12357415339370949,
+            0.1073187916786797,
+            0.005562826242270178
         ],
-        "roc_auc": 0.96875,
+        "roc_auc": 0.8784313725490196,
         "label": "positive_class"
     },
     "model_feature_importances": [
         {
-            "Feature": "time",
-            "Importance": 0.1303571428571429
+            "Feature": "max_age",
+            "Importance": 0.023214285714285778
         },
         {
-            "Feature": "wind_speed",
+            "Feature": "time_in_hours",
+            "Importance": 0.017857142857142905
+        },
+        {
+            "Feature": "time",
+            "Importance": 0.016071428571428625
+        },
+        {
+            "Feature": "rush_hour",
+            "Importance": 0.008928571428571463
+        },
+        {
+            "Feature": "vehicle_involved",
             "Importance": 0.008928571428571452
         },
         {
-            "Feature": "senior_involved",
-            "Importance": 0.00357142857142857
+            "Feature": "day_of_the_week",
+            "Importance": 0.005357142857142871
         },
         {
             "Feature": "road_type",
+            "Importance": 0.0017857142857143128
+        },
+        {
+            "Feature": "senior_involved",
+            "Importance": 0.0017857142857142904
+        },
+        {
+            "Feature": "adult_driver_involved",
+            "Importance": 2.2204460492503132e-17
+        },
+        {
+            "Feature": "total_driver_count",
+            "Importance": 2.2204460492503132e-17
+        },
+        {
+            "Feature": "child_involved",
+            "Importance": 1.1102230246251566e-17
+        },
+        {
+            "Feature": "road_name",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "visibility",
             "Importance": 0.0
         },
         {
@@ -226,80 +256,44 @@
             "Importance": 0.0
         },
         {
-            "Feature": "vehicle_count",
-            "Importance": 0.0
-        },
-        {
-            "Feature": "child_involved",
-            "Importance": 0.0
-        },
-        {
             "Feature": "senior_driver_involved",
-            "Importance": -0.0017857142857142794
+            "Importance": -0.0017857142857142573
         },
         {
-            "Feature": "road_name",
-            "Importance": -0.0017857142857142904
-        },
-        {
-            "Feature": "visibility",
-            "Importance": -0.003571428571428581
-        },
-        {
-            "Feature": "young_driver_involved",
-            "Importance": -0.003571428571428581
-        },
-        {
-            "Feature": "day_of_the_week",
-            "Importance": -0.005357142857142849
-        },
-        {
-            "Feature": "adult_driver_involved",
-            "Importance": -0.005357142857142861
-        },
-        {
-            "Feature": "male_count",
-            "Importance": -0.005357142857142871
-        },
-        {
-            "Feature": "vehicle_involved",
-            "Importance": -0.005357142857142871
-        },
-        {
-            "Feature": "rush_hour",
-            "Importance": -0.005357142857142871
-        },
-        {
-            "Feature": "max_age",
-            "Importance": -0.00714285714285714
-        },
-        {
-            "Feature": "time_in_hours",
-            "Importance": -0.007142857142857162
-        },
-        {
-            "Feature": "female_count",
-            "Importance": -0.010714285714285742
-        },
-        {
-            "Feature": "total_driver_count",
-            "Importance": -0.010714285714285742
-        },
-        {
-            "Feature": "temperature",
-            "Importance": -0.010714285714285742
-        },
-        {
-            "Feature": "locality",
-            "Importance": -0.016071428571428615
+            "Feature": "vehicle_count",
+            "Importance": -0.0035714285714285475
         },
         {
             "Feature": "weekend_weekday",
-            "Importance": -0.019642857142857163
+            "Importance": -0.0035714285714285587
+        },
+        {
+            "Feature": "locality",
+            "Importance": -0.0035714285714285587
+        },
+        {
+            "Feature": "wind_speed",
+            "Importance": -0.005357142857142838
+        },
+        {
+            "Feature": "young_driver_involved",
+            "Importance": -0.005357142857142838
+        },
+        {
+            "Feature": "male_count",
+            "Importance": -0.0071428571428571175
+        },
+        {
+            "Feature": "female_count",
+            "Importance": -0.0071428571428571175
+        },
+        {
+            "Feature": "temperature",
+            "Importance": -0.0071428571428571175
         },
         {
             "Feature": "min_age",
-            "Importance": -0.019642857142857174
+            "Importance": -0.008928571428571397
         }
     ]
 }
