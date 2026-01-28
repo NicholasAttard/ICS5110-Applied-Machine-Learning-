@@ -1,0 +1,305 @@
+{
+    "metric_results": {
+        "0": {
+            "precision": 0.8837209302325582,
+            "recall": 0.95,
+            "f1-score": 0.9156626506024096,
+            "support": 40.0
+        },
+        "1": {
+            "precision": 0.8461538461538461,
+            "recall": 0.6875,
+            "f1-score": 0.7586206896551724,
+            "support": 16.0
+        },
+        "accuracy": 0.875,
+        "macro avg": {
+            "precision": 0.8649373881932021,
+            "recall": 0.81875,
+            "f1-score": 0.837141670128791,
+            "support": 56.0
+        },
+        "weighted avg": {
+            "precision": 0.8729874776386405,
+            "recall": 0.875,
+            "f1-score": 0.8707935189031991,
+            "support": 56.0
+        }
+    },
+    "actual": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+    ],
+    "predictions": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+    ],
+    "confusion_matrix": {
+        "labels": [
+            "0",
+            "1"
+        ],
+        "matrix": [
+            [
+                38,
+                2
+            ],
+            [
+                5,
+                11
+            ]
+        ]
+    },
+    "roc_curve_ovrll": {
+        "fpr": [
+            0.0,
+            0.0,
+            0.0,
+            0.025,
+            0.025,
+            0.05,
+            0.05,
+            0.125,
+            0.125,
+            0.2,
+            0.2,
+            1.0
+        ],
+        "tpr": [
+            0.0,
+            0.0625,
+            0.625,
+            0.625,
+            0.6875,
+            0.6875,
+            0.875,
+            0.875,
+            0.9375,
+            0.9375,
+            1.0,
+            1.0
+        ],
+        "thresholds": [
+            Infinity,
+            0.8500121089075063,
+            0.5471135951355545,
+            0.5058879063235237,
+            0.5,
+            0.45588419327664664,
+            0.3750541056413122,
+            0.28952064889498164,
+            0.28395498352851184,
+            0.25355422204332867,
+            0.24666062701869693,
+            0.03760009120692453
+        ],
+        "roc_auc": 0.96875,
+        "label": "positive_class"
+    },
+    "model_feature_importances": [
+        {
+            "Feature": "time",
+            "Importance": 0.1303571428571429
+        },
+        {
+            "Feature": "wind_speed",
+            "Importance": 0.008928571428571452
+        },
+        {
+            "Feature": "senior_involved",
+            "Importance": 0.00357142857142857
+        },
+        {
+            "Feature": "road_type",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "ambulance_called",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "vehicle_count",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "child_involved",
+            "Importance": 0.0
+        },
+        {
+            "Feature": "senior_driver_involved",
+            "Importance": -0.0017857142857142794
+        },
+        {
+            "Feature": "road_name",
+            "Importance": -0.0017857142857142904
+        },
+        {
+            "Feature": "visibility",
+            "Importance": -0.003571428571428581
+        },
+        {
+            "Feature": "young_driver_involved",
+            "Importance": -0.003571428571428581
+        },
+        {
+            "Feature": "day_of_the_week",
+            "Importance": -0.005357142857142849
+        },
+        {
+            "Feature": "adult_driver_involved",
+            "Importance": -0.005357142857142861
+        },
+        {
+            "Feature": "male_count",
+            "Importance": -0.005357142857142871
+        },
+        {
+            "Feature": "vehicle_involved",
+            "Importance": -0.005357142857142871
+        },
+        {
+            "Feature": "rush_hour",
+            "Importance": -0.005357142857142871
+        },
+        {
+            "Feature": "max_age",
+            "Importance": -0.00714285714285714
+        },
+        {
+            "Feature": "time_in_hours",
+            "Importance": -0.007142857142857162
+        },
+        {
+            "Feature": "female_count",
+            "Importance": -0.010714285714285742
+        },
+        {
+            "Feature": "total_driver_count",
+            "Importance": -0.010714285714285742
+        },
+        {
+            "Feature": "temperature",
+            "Importance": -0.010714285714285742
+        },
+        {
+            "Feature": "locality",
+            "Importance": -0.016071428571428615
+        },
+        {
+            "Feature": "weekend_weekday",
+            "Importance": -0.019642857142857163
+        },
+        {
+            "Feature": "min_age",
+            "Importance": -0.019642857142857174
+        }
+    ]
+}
