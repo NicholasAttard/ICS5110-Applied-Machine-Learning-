@@ -217,64 +217,79 @@
         },
         "model_feature_importances": [
             {
-                "Feature": "weekend_weekday",
-                "Importance": 0.009126984126984095
+                "Feature": "num__max_age",
+                "Coefficient": -1.6238253153413669,
+                "Odds Ratio": 0.1971431202390141
             },
             {
-                "Feature": "wind_speed",
-                "Importance": 0.000793650793650776
+                "Feature": "cat__road_type_main road",
+                "Coefficient": -1.5800967361452227,
+                "Odds Ratio": 0.2059551739315855
             },
             {
-                "Feature": "senior_driver_involved",
-                "Importance": 0.0007936507936507649
+                "Feature": "cat__vehicle_involved_motorcycle-motorcycle",
+                "Coefficient": -1.5791071897349247,
+                "Odds Ratio": 0.20615907700376984
             },
             {
-                "Feature": "visibility",
-                "Importance": 0.0
+                "Feature": "num__child_involved",
+                "Coefficient": -1.4844245371040208,
+                "Odds Ratio": 0.2266327218805551
             },
             {
-                "Feature": "vehicle_involved",
-                "Importance": -0.00039682539682541764
+                "Feature": "cat__road_type_residential",
+                "Coefficient": -1.326606570147566,
+                "Odds Ratio": 0.26537627083380205
             },
             {
-                "Feature": "min_age",
-                "Importance": -0.00039682539682542133
+                "Feature": "cat__vehicle_involved_car-motorcycle",
+                "Coefficient": -1.159028389156434,
+                "Odds Ratio": 0.31379091547300203
             },
             {
-                "Feature": "child_involved",
-                "Importance": -0.004365079365079394
+                "Feature": "cat__vehicle_involved_car",
+                "Coefficient": -0.9966838791132336,
+                "Odds Ratio": 0.3691013988299927
             },
             {
-                "Feature": "adult_driver_involved",
-                "Importance": -0.005158730158730185
+                "Feature": "num__vehicle_count",
+                "Coefficient": -0.7452235260745432,
+                "Odds Ratio": 0.4746281963043022
             },
             {
-                "Feature": "time_in_hours",
-                "Importance": -0.0051587301587301924
+                "Feature": "num__rush_hour",
+                "Coefficient": -0.6472611182735619,
+                "Odds Ratio": 0.5234775582443824
             },
             {
-                "Feature": "road_type",
-                "Importance": -0.005952380952380979
+                "Feature": "cat__vehicle_involved_car-car-truck",
+                "Coefficient": -0.6274843780874164,
+                "Odds Ratio": 0.5339332872406051
             },
             {
-                "Feature": "temperature",
-                "Importance": -0.006349206349206374
+                "Feature": "cat__vehicle_involved_scooter-car",
+                "Coefficient": -0.5997797176413926,
+                "Odds Ratio": 0.5489325429319892
             },
             {
-                "Feature": "young_driver_involved",
-                "Importance": -0.009126984126984154
+                "Feature": "cat__vehicle_involved_van",
+                "Coefficient": -0.5808137941706398,
+                "Odds Ratio": 0.559442909887671
             },
             {
-                "Feature": "max_age",
-                "Importance": -0.014682539682539705
+                "Feature": "cat__road_type_roundabout",
+                "Coefficient": -0.5701105144380622,
+                "Odds Ratio": 0.5654629434268479
             },
             {
-                "Feature": "rush_hour",
-                "Importance": -0.02222222222222225
+                "Feature": "cat__vehicle_involved_car-scooter",
+                "Coefficient": -0.5555056560797578,
+                "Odds Ratio": 0.5737820514466875
             },
             {
-                "Feature": "vehicle_count",
-                "Importance": -0.025793650793650813
+                "Feature": "cat__weekend_weekday_weekend",
+                "Coefficient": -0.25343381040224705,
+                "Odds Ratio": 0.7761311150313421
             }
         ],
         "roc_curve_ovrll": {
@@ -328,24 +343,24 @@
                 Infinity,
                 0.9927329972000598,
                 0.9604209118566073,
-                0.9424270125249192,
+                0.942427012524919,
                 0.9391736479345442,
-                0.9047488239268615,
-                0.9015028603697621,
-                0.4866855864178107,
-                0.47117035128444446,
-                0.4574922214623676,
-                0.43388328943966664,
-                0.26775577529246636,
-                0.24755719544834706,
-                0.20055177443286684,
-                0.18860551694406455,
+                0.9047488239268616,
+                0.9015028603697623,
+                0.4866855864178109,
+                0.47117035128444495,
+                0.45749222146236634,
+                0.4338832894396654,
+                0.26775577529246586,
+                0.24755719544834787,
+                0.20055177443286734,
+                0.1886055169440644,
                 0.13704649415878484,
-                0.13586621914915764,
-                0.1329432563006699,
-                0.11985196872585487,
-                0.006733747323783746,
-                0.00010887844501121403
+                0.13586621914915747,
+                0.1329432563006702,
+                0.11985196872585505,
+                0.006733747323783728,
+                0.00010887844501121384
             ],
             "roc_auc": 0.5621621621621622,
             "label": "positive_class"
@@ -569,12 +584,28 @@
         },
         "model_feature_importances": [
             {
-                "Feature": "road_type",
-                "Importance": 0.0031746031746031763
+                "feature": "cat__road_type_residential",
+                "odds_ratio": 0.3401947273041946
             },
             {
-                "Feature": "senior_driver_involved",
-                "Importance": 0.0
+                "feature": "cat__road_type_roundabout",
+                "odds_ratio": 0.34194766717805
+            },
+            {
+                "feature": "cat__road_type_main road",
+                "odds_ratio": 0.36927142777223854
+            },
+            {
+                "feature": "num__senior_driver_involved",
+                "odds_ratio": 0.9226941569892991
+            },
+            {
+                "feature": "cat__road_type_junction",
+                "odds_ratio": 1.8790967334074573
+            },
+            {
+                "feature": "cat__road_type_motorway",
+                "odds_ratio": 5.511515255328239
             }
         ],
         "roc_curve_ovrll": {
@@ -604,15 +635,15 @@
             ],
             "thresholds": [
                 Infinity,
-                0.7586531049749748,
-                0.6258650316725304,
+                0.7586531049749732,
+                0.6258650316725305,
                 0.5863280202915704,
-                0.38184954909037716,
-                0.36387621349849847,
-                0.36268740049743875,
-                0.343571784424678,
-                0.326448662087604,
-                0.3253195933936453
+                0.3818495490903775,
+                0.36387621349849913,
+                0.3626874004974408,
+                0.3435717844246783,
+                0.3264486620876045,
+                0.3253195933936472
             ],
             "roc_auc": 0.47702702702702704,
             "label": "positive_class"
@@ -825,27 +856,33 @@
             ],
             "matrix": [
                 [
-                    40,
-                    34
+                    26,
+                    48
                 ],
                 [
-                    5,
-                    5
+                    3,
+                    7
                 ]
             ]
         },
         "model_feature_importances": [
             {
-                "Feature": "time_in_hours",
-                "Importance": 0.023412698412698395
+                "feature": "num__rush_hour",
+                "odds_ratio": 0.4713060420285757,
+                "ci_lower": 0.33664576539310115,
+                "ci_upper": 0.6598312175210673
             },
             {
-                "Feature": "weekend_weekday",
-                "Importance": 0.02261904761904761
+                "feature": "cat__weekend_weekday_weekend",
+                "odds_ratio": 0.645258950873267,
+                "ci_lower": 0.3967861720496581,
+                "ci_upper": 1.0493286888787081
             },
             {
-                "Feature": "rush_hour",
-                "Importance": 0.01706349206349205
+                "feature": "num__time_in_hours",
+                "odds_ratio": 1.0841149324519783,
+                "ci_lower": 0.8092744221948609,
+                "ci_upper": 1.4522949873761883
             }
         ],
         "roc_curve_ovrll": {
@@ -929,14 +966,14 @@
             ],
             "thresholds": [
                 Infinity,
-                0.6379838345517744,
+                0.6379838345517745,
                 0.6336784572404568,
-                0.6315922838343228,
-                0.6311446024463568,
+                0.6315922838343229,
+                0.631144602446357,
                 0.627704921690772,
                 0.6256048287416369,
                 0.6225964889953747,
-                0.613971439956713,
+                0.6139714399567131,
                 0.6135154488328359,
                 0.6074168170941647,
                 0.6069580399122373,
@@ -952,19 +989,19 @@
                 0.5723786460305093,
                 0.5660899831534656,
                 0.506226582369303,
-                0.5060022068197734,
+                0.5060022068197733,
                 0.49959080633471076,
                 0.48356750407074395,
-                0.47300856220838666,
-                0.46119884376814524,
+                0.47300856220838655,
+                0.46119884376814513,
                 0.45705911731062876,
-                0.23203361422914917,
-                0.23043792871005706,
-                0.22794599001900798,
-                0.2078521786894924,
-                0.20637809897573411,
-                0.1452717538286666,
-                0.14368673397958076
+                0.23203361422914923,
+                0.23043792871005717,
+                0.22794599001900806,
+                0.20785217868949243,
+                0.2063780989757342,
+                0.14527175382866664,
+                0.1436867339795808
             ],
             "roc_auc": 0.5013513513513513,
             "label": "positive_class"
@@ -1177,23 +1214,105 @@
             ],
             "matrix": [
                 [
-                    40,
-                    34
+                    57,
+                    17
                 ],
                 [
-                    5,
-                    5
+                    4,
+                    6
                 ]
             ]
         },
         "model_feature_importances": [
             {
-                "Feature": "vehicle_involved",
-                "Importance": 0.17103174603174606
+                "feature": "cat__vehicle_involved_car-pedestrian",
+                "odds_ratio": 0.18760630781162324,
+                "ci_lower": 0.04293628280771301,
+                "ci_upper": 0.8197292459697266
             },
             {
-                "Feature": "vehicle_count",
-                "Importance": 0.14761904761904762
+                "feature": "cat__vehicle_involved_motorcycle-motorcycle",
+                "odds_ratio": 0.4698436881015409,
+                "ci_lower": 0.035473579927171726,
+                "ci_upper": 6.22302828477054
+            },
+            {
+                "feature": "cat__vehicle_involved_van",
+                "odds_ratio": 0.47110255924155336,
+                "ci_lower": 0.022488295753719793,
+                "ci_upper": 9.869028038162051
+            },
+            {
+                "feature": "cat__vehicle_involved_motorcycle-pedestrian",
+                "odds_ratio": 0.47110255924155336,
+                "ci_lower": 0.022488295753719793,
+                "ci_upper": 9.869028038162051
+            },
+            {
+                "feature": "cat__vehicle_involved_car-bicycle",
+                "odds_ratio": 0.5333892531699522,
+                "ci_lower": 0.030653939777564056,
+                "ci_upper": 9.281159206994687
+            },
+            {
+                "feature": "cat__vehicle_involved_car-bus",
+                "odds_ratio": 0.5333892531699522,
+                "ci_lower": 0.030653939777564056,
+                "ci_upper": 9.281159206994687
+            },
+            {
+                "feature": "num__vehicle_count",
+                "odds_ratio": 0.564691451653481,
+                "ci_lower": 0.2151076416258738,
+                "ci_upper": 1.4824040334425768
+            },
+            {
+                "feature": "cat__vehicle_involved_bus",
+                "odds_ratio": 0.6405641408176441,
+                "ci_lower": 0.010917140339679108,
+                "ci_upper": 37.585155611685344
+            },
+            {
+                "feature": "cat__vehicle_involved_car ",
+                "odds_ratio": 0.6405641408176441,
+                "ci_lower": 0.010917140339679146,
+                "ci_upper": 37.58515561168521
+            },
+            {
+                "feature": "cat__vehicle_involved_car",
+                "odds_ratio": 0.7107870476168925,
+                "ci_lower": 0.2027241420620086,
+                "ci_upper": 2.4921463320604613
+            },
+            {
+                "feature": "cat__vehicle_involved_van-van",
+                "odds_ratio": 0.761650006387326,
+                "ci_lower": 0.008903523275647285,
+                "ci_upper": 65.1551879261685
+            },
+            {
+                "feature": "cat__vehicle_involved_bus-truck",
+                "odds_ratio": 0.761650006387326,
+                "ci_lower": 0.008903523275647285,
+                "ci_upper": 65.1551879261685
+            },
+            {
+                "feature": "cat__vehicle_involved_car-scooter",
+                "odds_ratio": 0.761650006387326,
+                "ci_lower": 0.008903523275647285,
+                "ci_upper": 65.1551879261685
+            },
+            {
+                "feature": "cat__vehicle_involved_motorcycle-bicycle",
+                "odds_ratio": 0.761650006387326,
+                "ci_lower": 0.008903523275647285,
+                "ci_upper": 65.1551879261685
+            },
+            {
+                "feature": "cat__vehicle_involved_bicycle-truck",
+                "odds_ratio": 0.761650006387326,
+                "ci_lower": 0.008903523275647285,
+                "ci_upper": 65.1551879261685
             }
         ],
         "roc_curve_ovrll": {
@@ -1237,22 +1356,22 @@
             ],
             "thresholds": [
                 Infinity,
-                0.7418739299694379,
-                0.7394942365360867,
-                0.7160587182301998,
-                0.6702422470336677,
-                0.6437963633528164,
-                0.5582124131968457,
-                0.4933146521255457,
-                0.47315782113702265,
-                0.3769270750020207,
-                0.32787159896933626,
-                0.3277617958427307,
-                0.28815587672301596,
-                0.20647083194282828,
-                0.19162290389252776,
-                0.15848218090281643,
-                0.104758681989133
+                0.7418739299694385,
+                0.7394942365360879,
+                0.7160587182301997,
+                0.6702422470336701,
+                0.6437963633528179,
+                0.5582124131968462,
+                0.4933146521255462,
+                0.4731578211370213,
+                0.3769270750020217,
+                0.32787159896933754,
+                0.327761795842734,
+                0.28815587672301585,
+                0.20647083194283078,
+                0.1916229038925275,
+                0.15848218090281754,
+                0.10475868198913392
             ],
             "roc_auc": 0.7405405405405405,
             "label": "positive_class"
